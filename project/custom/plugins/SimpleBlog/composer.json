@@ -1,6 +1,6 @@
 {
   "name": "swag/plugin-skeleton",
-  "description": "Skeleton plugin",
+  "description": "Simple blog for task definition",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "autoload": {
@@ -11,8 +11,8 @@
   "extra": {
     "shopware-plugin-class": "SimpleBlog\\SimpleBlog",
     "label": {
-      "de-DE": "Skeleton plugin",
-      "en-GB": "Skeleton plugin"
+      "de-DE": "Einfaches Blog-Plugin",
+      "en-GB": "Simple blog plugin"
     }
   }
 }
