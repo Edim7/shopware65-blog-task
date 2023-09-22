@@ -1,17 +1,20 @@
-## Quickstart / Installation
+Before we start, a bit about the requirements
 
-A full installation guide covering different dev environments is available in the [docs](https://developer.shopware.com/docs/guides/installation).
+For this to run you need PHP, Docker, Composer and Symfony CLI
+We are going to use Symfonys webserver and Docker for almost everything else since this makes the workflow much easier to setup and less resource intensive
 
-*For the impatient reader, here is a tl;dr using docker and symfony cli.*
 
-Let's start by creating a new project:
+
+## Short info on the install and how this project was created
+
+
+This project was created with composer and the shopware production:dev-flex project command below:
 
 ```bash
 > composer create-project shopware/production:dev-flex project
 ```
 
-You now have the application template for the Shopware Platform in the directory `project`, we now change into it:
-
+Application template for the Shopware Platform is in the directory `project`, which we can cd inot to start up our project
 ```bash
 > cd project
 ```
@@ -22,13 +25,13 @@ Now we start our service containers:
 > docker compose up -d
 ```
 
-And install Shopware with the following command:
+You might need to install it through symfony CLI
 
 ```bash
 symfony console system:install --basic-setup --drop-database --create-database -f
 ```
 
-Start the webserver:
+Start the webserver with Symfony CLI:
 
 ```bash
 symfony server:start -d
