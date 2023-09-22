@@ -43,4 +43,4 @@ PS you should use Symfony CLI instead of ./bin/console or ./psh.phar
 symfony console plugin:refresh
 ```
 
-To be sure that the installation succeeded, just open the following URL in your favorite browser: [localhost:8000](http://localhost:8000/)
+To be sure that the installation succeeded, just open the following URL in your favorite browser: [127.0.0.1:8000](http://127.0.0.1:8000/)
