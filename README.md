@@ -1,4 +1,5 @@
-Before we start, a bit about the requirements
+Before we start, a bit about the project / set up...
+Even though I named the repo shopware 65 its actually using shopware 6.4
 
 For this to run you need PHP, Docker, Composer and Symfony CLI
 We are going to use Symfonys webserver and Docker for almost everything else since this makes the workflow much easier to setup and less resource intensive
@@ -8,7 +9,7 @@ We are going to use Symfonys webserver and Docker for almost everything else sin
 ## Short info on the install and how this project was created
 
 
-This project was created with composer and the shopware production:dev-flex project command below:
+This project was created with composer and the shopware production:dev-flex project command below: (this gets shopware 6.4, even though I expeted 6.5)
 
 ```bash
 > composer create-project shopware/production:dev-flex project
@@ -25,7 +26,13 @@ Now we start our service containers:
 > docker compose up -d
 ```
 
-You might need to install it through symfony CLI
+Install deps
+
+```bash
+> composer install
+```
+
+You need to install it through symfony CLI
 
 ```bash
 symfony console system:install --basic-setup --drop-database --create-database -f
